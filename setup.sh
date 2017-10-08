@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cp ~/.bashrc ~/.bashrc.vim2emacs.back
+cp ./.rand_vim.sh ~/
 # please use ">>" not ">", I'm meaning it!
-echo "alias vim='if [ $(($RANDOM%10)) -lt 2 ]; then emacs; else vim; fi'" >> ~/.bashrc
+echo "alias vim='~/.rand_vim.sh'" >> ~/.bashrc
 source ~/.bashrc
